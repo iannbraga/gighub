@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  descricao: MyString
+  data_hora_inicio: 2024-06-20 00:07:39
+  data_hora_termino: 2024-06-20 00:07:39
+  horas_tocadas: 1
+  minutos_tocados: 1
+  cache: 9.99
+  couvert: 9.99
+
+two:
+  nome: MyString
+  descricao: MyString
+  data_hora_inicio: 2024-06-20 00:07:39
+  data_hora_termino: 2024-06-20 00:07:39
+  horas_tocadas: 1
+  minutos_tocados: 1
+  cache: 9.99
+  couvert: 9.99

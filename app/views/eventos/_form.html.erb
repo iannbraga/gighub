@@ -1,0 +1,57 @@
+<%= form_with(model: evento) do |form| %>
+  <% if evento.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(evento.errors.count, "error") %> prohibited this evento from being saved:</h2>
+
+      <ul>
+        <% evento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div>
+    <%= form.label :data_hora_inicio, style: "display: block" %>
+    <%= form.datetime_field :data_hora_inicio %>
+  </div>
+
+  <div>
+    <%= form.label :data_hora_termino, style: "display: block" %>
+    <%= form.datetime_field :data_hora_termino %>
+  </div>
+
+  <div>
+    <%= form.label :horas_tocadas, style: "display: block" %>
+    <%= form.number_field :horas_tocadas %>
+  </div>
+
+  <div>
+    <%= form.label :minutos_tocados, style: "display: block" %>
+    <%= form.number_field :minutos_tocados %>
+  </div>
+
+  <div>
+    <%= form.label :cache, style: "display: block" %>
+    <%= form.text_field :cache %>
+  </div>
+
+  <div>
+    <%= form.label :couvert, style: "display: block" %>
+    <%= form.text_field :couvert %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
